@@ -37,3 +37,6 @@ colorNames = [
 print(colorNames)
 threeColors = colorNames[4:7]
 print(threeColors)
+x = 10/4
+y = 10//4
+print(x,y)
