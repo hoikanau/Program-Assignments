@@ -1,4 +1,5 @@
 import random as rand
+import numpy as np
 
 # pi = 0
 # while pi < 100:
@@ -86,4 +87,15 @@ for i in range (length):
 
 # totalPrice(food,"cheese","beef")
 
-       
+listNumbers = []
+size = 5
+for i in range(size):
+    listNumbers.append(10*np.random.random())
+
+print(listNumbers)
+listNumbers.sort()
+print(listNumbers)
+
+
+listCities = ["New York", "Los Angeles", "Oakland", "Chicago", "Paris"]
+listCities.sort(key=len)
