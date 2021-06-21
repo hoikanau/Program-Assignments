@@ -32,5 +32,9 @@ def primeFinder(max):
 
 print(primeFinder(30))
 
+def triangleArea(base, height):
+    area = base*height/2
+    return area
 
-        
+print(triangleArea(3,9))
+       
