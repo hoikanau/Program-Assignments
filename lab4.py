@@ -1,3 +1,5 @@
+import random as rand
+
 # pi = 0
 # while pi < 100:
 #     print(pi)
@@ -46,18 +48,42 @@ for b in range (0,n):
         areaList.append(triangleArea(b,h))
 
 print(areaList)
-
-food = {
-    "chicken":1.59,
-    "beef":1.99,
-    "cheese":1.00,
-    "milk":2.50
+Menu = {
+    "Burgers": 12.99,
+    "Fries": 3.99,
+    "Shakes":1.50
 }
 
-def totalPrice(food1,food2):
-    grandTotal = food1 + food2
-    return grandTotal
+def foodSum(Dict, item1, item2):
+    sum = Dict[item1] + Dict[item2]
+    print("The total price of your order of " + item1 + " and " + item2 + " is $" + str(sum))
+    sum += 1.0925
+    print("With tax that will be $ " + str(sum))
 
-print(totalPrice(food["chicken"], food["beef"]))
+foodSum(Menu, "Burgers", "Fries")
+
+listPlayers = [1,2,3,4,5,6,7]
+length = len(listPlayers)
+for i in range (length):
+    length = len(listPlayers)
+    randomNumber = rand.randint(0,length-1)
+    listPlayers.pop(randomNumber)
+    print(listPlayers)
+
+#add things = append, extend, insert
+# take over things = pop, remove, clear
+
+# food = {
+#     "chicken":1.59,
+#     "beef":1.99,
+#     "cheese":1.00,
+#     "milk":2.50
+# }
+
+# def totalPrice(Dict, food1, food2):
+#     grandTotal = Dict[food1] + Dict[food2]
+#     print("The total price of your order of " + food1 + " and " + food2 + " is " + str[grandTotal])
+
+# totalPrice(food,"cheese","beef")
 
        
