@@ -43,3 +43,4 @@ shoes = {
     "Air Max":5,
     "SB Dunk":20
 }
+

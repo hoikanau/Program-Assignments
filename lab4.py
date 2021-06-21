@@ -37,4 +37,27 @@ def triangleArea(base, height):
     return area
 
 print(triangleArea(3,9))
+
+n = 5
+m = 5
+areaList = []
+for b in range (0,n):
+    for h in range (0,m):
+        areaList.append(triangleArea(b,h))
+
+print(areaList)
+
+food = {
+    "chicken":1.59,
+    "beef":1.99,
+    "cheese":1.00,
+    "milk":2.50
+}
+
+def totalPrice(food1,food2):
+    grandTotal = food1 + food2
+    return grandTotal
+
+print(totalPrice(food["chicken"], food["beef"]))
+
        
