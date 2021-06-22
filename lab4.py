@@ -1,5 +1,5 @@
 import random as rand
-import numpy as np
+
 
 # pi = 0
 # while pi < 100:
@@ -81,21 +81,45 @@ for i in range (length):
 #     "milk":2.50
 # }
 
-# def totalPrice(Dict, food1, food2):
+# def totalPrice(Dict, food1, food2):z
 #     grandTotal = Dict[food1] + Dict[food2]
 #     print("The total price of your order of " + food1 + " and " + food2 + " is " + str[grandTotal])
 
 # totalPrice(food,"cheese","beef")
-
+print(" ")
 listNumbers = []
 size = 5
 for i in range(size):
-    listNumbers.append(10*np.random.random())
+    listNumbers.append(10*rand.randint(0,size-1))
 
 print(listNumbers)
 listNumbers.sort()
 print(listNumbers)
 
+shoes = {
+    "Jordan 13":1,
+    "Yeezy":8,
+    "Foamposite":10,
+    "Air Max":5,
+    "SB Dunk":20
+}
+
+name = shoes["Yeezy"]
+def restock(shoe, ammount):
+    print(shoe)
+    shoe = shoe*ammount
+    print(shoe)
+
+restock(name,3)
+
+name = shoes["SB Dunk"]
+def clearanceSale(shoe, ammount):
+    print(shoe)
+    shoe = shoe//ammount
+    print(shoe)
+
+clearanceSale(name,5)
 
 listCities = ["New York", "Los Angeles", "Oakland", "Chicago", "Paris"]
 listCities.sort(key=len)
+print(listCities)
