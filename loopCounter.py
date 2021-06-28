@@ -7,7 +7,7 @@
 # next x
 loopCounter = 19
 def loopValue(Times):
-    value = 1
+    value = int(input("enter a number between 1 - 10"))
     for x in range (Times):
         value = value + 1
         print(value)
